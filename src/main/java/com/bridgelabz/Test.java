@@ -13,5 +13,8 @@ public class Test {
             System.out.println(" Connection established");
         else
             System.out.println(" Connection failed");
+
+        StatementDB statement = new StatementDB(connection);
+        statement.read();
     }
 }
